@@ -1,0 +1,162 @@
+[
+  {
+    "id": "lesson-air-leakage",
+    "topic": "Air brake leakage rates",
+    "title": "The four leakage numbers",
+    "section": "air_brakes",
+    "status": "approved",
+    "related_question_topics": ["Air brake leakage rate", "Air brake pre-trip checks"],
+    "scenes": [
+      {
+        "narration": "Engine off, brakes released. Watch the air gauge. A single vehicle can lose at most 2 psi in a minute. A combination vehicle can lose at most 3.",
+        "animation": null,
+        "key_fact": "Brakes released: single 2 psi per minute, combination 3 psi per minute"
+      },
+      {
+        "narration": "Now push the brake pedal down and hold it. The limits go up by one: a single vehicle can lose at most 3 psi in a minute, a combination at most 4.",
+        "animation": null,
+        "key_fact": "Brakes applied: single 3 psi per minute, combination 4 psi per minute"
+      },
+      {
+        "narration": "Remember it as two, three, three, four. Released then applied, single then combination. More air can leak when the system is under pressure from an applied brake, and combinations have more lines to leak.",
+        "animation": null,
+        "key_fact": "2-3 released, 3-4 applied. Anything faster means fix it before you drive."
+      }
+    ]
+  },
+  {
+    "id": "lesson-brake-lag",
+    "topic": "Air brake lag distance",
+    "title": "Why air brakes act late",
+    "section": "air_brakes",
+    "status": "draft",
+    "related_question_topics": ["Brake lag", "Total stopping distance"],
+    "scenes": [
+      {
+        "narration": "DRAFT: verify lag time and added distance figures against the NV CDL manual before approval.",
+        "animation": null,
+        "key_fact": null
+      }
+    ]
+  },
+  {
+    "id": "lesson-stopping-distance",
+    "topic": "Total stopping distance",
+    "title": "Perception to full stop",
+    "section": "general_knowledge",
+    "status": "draft",
+    "related_question_topics": ["Stopping distance", "Speed management"],
+    "scenes": [
+      {
+        "narration": "DRAFT: verify perception, reaction, and braking distance components against the NV CDL manual before approval.",
+        "animation": null,
+        "key_fact": null
+      }
+    ]
+  },
+  {
+    "id": "lesson-coupling",
+    "topic": "Coupling and uncoupling",
+    "title": "Coupling, step by step",
+    "section": "combination",
+    "status": "draft",
+    "related_question_topics": ["Coupling", "Uncoupling", "Fifth wheel"],
+    "scenes": [
+      {
+        "narration": "DRAFT: verify coupling sequence against the NV CDL manual before approval.",
+        "animation": null,
+        "key_fact": null
+      }
+    ]
+  },
+  {
+    "id": "lesson-gvwr",
+    "topic": "GVWR and GCWR",
+    "title": "Weight ratings that decide your license",
+    "section": "general_knowledge",
+    "status": "draft",
+    "related_question_topics": ["GVWR", "GCWR", "License classes"],
+    "scenes": [
+      {
+        "narration": "DRAFT: verify weight thresholds and class definitions against the NV CDL manual before approval.",
+        "animation": null,
+        "key_fact": null
+      }
+    ]
+  },
+  {
+    "id": "lesson-hazmat-placards",
+    "topic": "HazMat placards",
+    "title": "Reading placards fast",
+    "section": "hazmat",
+    "status": "draft",
+    "related_question_topics": ["Placards", "HazMat identification"],
+    "scenes": [
+      {
+        "narration": "DRAFT: verify placarding rules against the NV CDL manual before approval.",
+        "animation": null,
+        "key_fact": null
+      }
+    ]
+  },
+  {
+    "id": "lesson-trailer-skid",
+    "topic": "Trailer skids and jackknife",
+    "title": "Catching a jackknife early",
+    "section": "combination",
+    "status": "draft",
+    "related_question_topics": ["Trailer skid", "Jackknife"],
+    "scenes": [
+      {
+        "narration": "DRAFT: verify skid recovery guidance against the NV CDL manual before approval.",
+        "animation": null,
+        "key_fact": null
+      }
+    ]
+  },
+  {
+    "id": "lesson-tank-surge",
+    "topic": "Liquid surge",
+    "title": "Why tankers push you",
+    "section": "tanker",
+    "status": "draft",
+    "related_question_topics": ["Liquid surge", "Baffles", "Outage"],
+    "scenes": [
+      {
+        "narration": "DRAFT: verify surge and outage facts against the NV CDL manual before approval.",
+        "animation": null,
+        "key_fact": null
+      }
+    ]
+  },
+  {
+    "id": "lesson-doubles-crackwhip",
+    "topic": "Crack the whip",
+    "title": "The rearmost trailer moves most",
+    "section": "doubles_triples",
+    "status": "draft",
+    "related_question_topics": ["Crack the whip", "Rollover risk"],
+    "scenes": [
+      {
+        "narration": "DRAFT: verify crack-the-whip and rollover facts against the NV CDL manual before approval.",
+        "animation": null,
+        "key_fact": null
+      }
+    ]
+  },
+  {
+    "id": "lesson-inspection-brakes",
+    "topic": "Brake system inspection",
+    "title": "Brake checks that fail students",
+    "section": "air_brakes",
+    "status": "draft",
+    "related_question_topics": ["Air brake pre-trip checks", "Low air warning"],
+    "scenes": [
+      {
+        "narration": "DRAFT: verify low air warning and spring brake pop-out values against the NV CDL manual before approval.",
+        "animation": null,
+        "key_fact": null
+      }
+    ]
+  }
+]

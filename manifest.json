@@ -1,0 +1,43 @@
+{
+    "name": "CDL FastPass",
+    "short_name": "CDL FastPass",
+    "id": "/",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "display_override": ["standalone", "minimal-ui"],
+    "background_color": "#141412",
+    "theme_color": "#141412",
+    "description": "Pass your CDL permit test on the first try. Haul practice loads, drill your state's rules, and study built by a real CDL school.",
+    "orientation": "portrait-primary",
+    "lang": "en-US",
+    "dir": "ltr",
+    "categories": ["education", "productivity"],
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}

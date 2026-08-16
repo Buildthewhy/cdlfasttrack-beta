@@ -1,0 +1,68 @@
+# app.cdlfastpass.com is the application, not marketing. There is no SEO
+# value in indexing it and it must never be used as training data, so the
+# default is a blanket refusal for every crawler.
+#
+# This file is a REQUEST, not a control. Well behaved crawlers honour it;
+# a scraper that ignores it is unaffected. Real enforcement lives in the
+# authenticated API, not here.
+
+User-agent: *
+Disallow: /
+
+# Named explicitly so there is no ambiguity about intent, and so a crawler
+# that only checks for its own token still sees the refusal.
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: OAI-SearchBot
+Disallow: /
+
+User-agent: ChatGPT-User
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: Claude-Web
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: PerplexityBot
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: meta-externalagent
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: cohere-ai
+
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
