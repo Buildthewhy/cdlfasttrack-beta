@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <!-- viewport-fit=cover lets the dark UI run under the iPhone notch and
+       home indicator instead of leaving white bars. Zoom is deliberately
+       NOT disabled: this is a study app and people enlarge text. -->
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Pass your CDL permit test on the first try. Haul practice loads, drill your state's rules, and study built by a real CDL school.">
+  <!-- Colours the browser chrome and the standalone status bar so the app
+       does not flash Flutter blue on launch. -->
+  <meta name="theme-color" content="#141412">
+
+  <!-- Add to Home Screen -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="CDL FastPass">
+  <meta name="application-name" content="CDL FastPass">
+  <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180.png">
+
+  <!-- Link previews when a student shares the app -->
+  <meta property="og:title" content="CDL FastPass">
+  <meta property="og:description" content="Pass your CDL permit test on the first try. Study built by a real CDL school.">
+  <meta property="og:image" content="https://www.cdlfastpass.com/assets/og.png">
+  <meta property="og:url" content="https://app.cdlfastpass.com/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>CDL FastPass</title>
+  <link rel="manifest" href="manifest.json">
+</head>
+<body style="background-color:#141412;margin:0">
+  <!--
+    You can customize the "flutter_bootstrap.js" script.
+    This is useful to provide a custom configuration to the Flutter loader
+    or to give the user feedback during the initialization process.
+
+    For more details:
+    * https://docs.flutter.dev/platform-integration/web/initialization
+  -->
+  <script src="flutter_bootstrap.js" async></script>
+  <script>
+    // Web-only ambient-video kick. video_player's web initialize can stall,
+    // leaving our muted looping backgrounds paused even though the browser
+    // happily plays them (verified: direct element.play() succeeds). This
+    // shim watches for video elements (including inside shadow roots) and
+    // keeps muted+looping ones playing. Native platforms are unaffected.
+    (function () {
+      function kick(v) {
+        try {
+          // Only ambient background loops: they are muted by design and
+          // just need play() re-issued. Non-looping videos (the lesson
+          // player) manage their own playback and MUST keep their audio,
+          // so the sweep never touches them.
+          if (!v.loop) return;
+          v.muted = true;
+          if (v.paused) { var p = v.play(); if (p) p.catch(function () {}); }
+        } catch (e) {}
+      }
+      function sweep(root) {
+        var all = root.querySelectorAll('*');
+        for (var i = 0; i < all.length; i++) {
+          var el = all[i];
+          if (el.tagName === 'VIDEO') kick(el);
+          if (el.shadowRoot) sweep(el.shadowRoot);
+        }
+      }
+      setInterval(function () { sweep(document); }, 1500);
+    })();
+  </script>
+</body>
+</html>
