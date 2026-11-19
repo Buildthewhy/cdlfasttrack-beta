@@ -51,3 +51,10 @@
 - night_climb.jpg: mountain grade climb (exam picker + road trip headers)
 - night_overlook.jpg: overlook under the stars (garage header)
 - night_vanishing.jpg: tail lights to the vanishing point (league + checklist headers)
+
+- rig/truck_0.jpg to rig/truck_4.jpg and rig/truck_legendary_0.jpg to
+  rig/truck_legendary_4.jpg: original renders made for CDL FastPass with
+  Higgsfield (GPT Image 2.6), 2026-11-18. One base truck edited into each
+  upgrade stage so the angle and lighting match. Generic design, no
+  manufacturer name or badge. Full-size originals are kept outside git in
+  CDLPermitApp/design/rig-stages/ on the Mac mini.
